@@ -400,12 +400,22 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
         .v-app__content__card-box__item__card {
             position: relative;
             display: block;
-            height: 50vh;
-            width: auto;
-            top: -2.4vh;
-            left: -5vh;
-            margin-right: -10vh;
-            margin-bottom: -11.2vh;
+            height: auto;
+
+            width: 80vw;
+            top: -2.6vw;
+            left: -5.7vw;
+            margin-right: -11.5vw;
+            margin-bottom: -12.7vw;
+
+            @media (min-width: 900px) {
+                height: 50vh;
+                width: auto;
+                top: -2.4vh;
+                left: -5vh;
+                margin-right: -10vh;
+                margin-bottom: -11.2vh;
+            }
         }
 
         &:hover {
@@ -423,6 +433,11 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
     justify-content: center;
     gap: 2rem;
     width: 100%;
+    flex-direction: column;
+
+    @media (min-width: 900px) {
+        flex-direction: row;
+    }
 }
 
 .v-app__background-filter {
@@ -443,6 +458,8 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
   bottom: 0;
   left: 0;
   width: 100%;
+    z-index: 100;
+
 }
 
 </style>

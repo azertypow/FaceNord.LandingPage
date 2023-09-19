@@ -118,9 +118,14 @@ button {
 }
 
 h1 {
-  line-height: 3rem;
-  font-size: 3rem;
+  line-height: 1.25rem;
+  font-size: 1.25rem;
   max-width: 17em;
+
+  @media (min-width: 1100px) {
+    line-height: 3rem;
+    font-size: 3rem;
+  }
 }
 
 

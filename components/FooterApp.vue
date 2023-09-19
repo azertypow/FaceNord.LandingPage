@@ -40,9 +40,16 @@
 .v-footer-app {
     height: 3rem;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 900px) {
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+    }
 }
 
 .v-footer-app__adresse {
