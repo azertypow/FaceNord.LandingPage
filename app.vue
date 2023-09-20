@@ -338,12 +338,26 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
     min-height: 100%;
     box-sizing: content-box;
 
-    &:before,
-    &:after {
+    &:before {
         content: "";
         display: block;
         height: 3rem;
         width: 100%;
+
+        @media (min-width: 900px) {
+            height: 5rem;
+        }
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        height: 10rem;
+        width: 100%;
+
+        @media (min-height: 660px) {
+            height: 3rem;
+        }
 
         @media (min-width: 900px) {
             height: 5rem;
@@ -468,14 +482,9 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
     background: rgba(255, 255, 255, .9);
     box-shadow: 0 -10px 10px rgba(0, 0, 0, .15);
 
-
     @media (min-height: 660px) {
         background: transparent;
         box-shadow: none;
-    }
-
-    @media (min-width: 900px) {
-        background: transparent;
     }
 }
 
