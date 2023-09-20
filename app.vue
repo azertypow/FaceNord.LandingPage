@@ -342,8 +342,12 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
     &:after {
         content: "";
         display: block;
-        height: 5rem;
+        height: 3rem;
         width: 100%;
+
+        @media (min-width: 900px) {
+            height: 5rem;
+        }
     }
 }
 
@@ -366,13 +370,14 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top:        10vh;
-    padding-bottom:     10vh;
+    padding-top:        5vh;
+    padding-bottom:     5vh;
     perspective: 100vh;
     position: relative;
 
     @media (min-width: 1100px) {
         padding-top:        15vh;
+        padding-bottom:     10vh;
     }
 
     .v-app__content__card-box__item {
@@ -431,12 +436,13 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: .5rem;
     width: 100%;
     flex-direction: column;
 
     @media (min-width: 900px) {
         flex-direction: row;
+        gap: 2rem;
     }
 }
 

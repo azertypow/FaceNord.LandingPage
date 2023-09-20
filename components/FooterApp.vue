@@ -38,17 +38,20 @@
 
 <style lang="scss" scoped >
 .v-footer-app {
-    height: 3rem;
     display: flex;
     padding: 1rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    height: auto;
 
     @media (min-width: 900px) {
         justify-content: space-between;
         align-items: flex-end;
         flex-direction: row;
+        gap: normal;
+        height: 3rem;
     }
 }
 
@@ -65,5 +68,11 @@
 .v-footer-app__licence {
     font-size: .75rem;
     opacity: .5;
+    padding-left: 1.65rem;
+
+
+    @media (min-width: 900px) {
+        padding: 0;
+    }
 }
 </style>
