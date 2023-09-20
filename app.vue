@@ -465,7 +465,18 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
   left: 0;
   width: 100%;
     z-index: 100;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, .15);
 
+
+    @media (min-height: 660px) {
+        background: transparent;
+        box-shadow: none;
+    }
+
+    @media (min-width: 900px) {
+        background: transparent;
+    }
 }
 
 </style>
