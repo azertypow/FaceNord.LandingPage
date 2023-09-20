@@ -359,7 +359,7 @@ function onMouseLeaveCard(mouseEvent: MouseEvent, cardElement: HTMLElement) {
     @media (min-width: 1100px) {
         position: fixed;
         left: 0;
-        top: 0;
+        top: 1rem;
         padding-left: 13rem;
     }
 }
